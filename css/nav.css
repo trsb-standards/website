@@ -1,0 +1,87 @@
+/* TRSB — Navigation */
+
+/* ===== NAV ===== */
+nav#sitenav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 200;
+	background: rgba(255, 255, 255, 0.96);
+	backdrop-filter: blur(12px);
+	border-bottom: 1px solid var(--border);
+	transition: box-shadow 0.3s;
+}
+
+.nav-inner {
+	max-width: 1120px;
+	margin: 0 auto;
+	padding: 0 48px;
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.nav-logo {
+	font-family: var(--mono);
+	font-size: 1rem;
+	font-weight: 500;
+	color: var(--ink);
+	letter-spacing: 0.08em;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.nav-logo img {
+	height: 48px
+}
+
+.nav-logo-mark {
+	width: 28px;
+	height: 28px;
+	background: var(--accent);
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav-logo-mark svg {
+	width: 14px;
+	height: 14px;
+	fill: white;
+}
+
+.nav-links {
+	display: flex;
+	gap: 0;
+	align-items: center;
+}
+
+.nav-links a {
+	font-family: var(--sans);
+	font-size: 0.8rem;
+	font-weight: 500;
+	color: var(--ink3);
+	padding: 8px 14px;
+	transition: color 0.15s;
+}
+
+.nav-links a:hover {
+	color: var(--ink);
+	text-decoration: none;
+}
+
+.nav-cta {
+	background: var(--ink) !important;
+	color: var(--white) !important;
+	border-radius: 4px;
+	margin-left: 8px;
+	padding: 7px 16px !important;
+}
+
+.nav-cta:hover {
+	background: var(--ink2) !important;
+}

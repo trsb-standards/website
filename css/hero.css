@@ -1,0 +1,44 @@
+/* TRSB — Hero section */
+
+/* ===== HERO ===== */
+#hero {
+  padding-top: 60px;
+  background: var(--ink);
+  overflow: hidden;
+  position: relative;
+}
+.hero-grid-bg {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(0,87,255,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,87,255,0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse 80% 60% at 60% 40%, black 30%, transparent 80%);
+}
+.hero-accent-bar { position: absolute; top: 60px; left: 0; right: 0; height: 3px; background: linear-gradient(90deg, var(--accent), #7B3FFF, transparent); }
+.hero-inner { max-width: 1120px; margin: 0 auto; padding: 80px 48px 72px; display: grid; grid-template-columns: 1fr 380px; gap: 72px; align-items: center; position: relative; z-index: 2; }
+.hero-tag { display: inline-flex; align-items: center; gap: 8px; background: rgba(0,87,255,0.15); border: 1px solid rgba(0,87,255,0.3); border-radius: 100px; padding: 5px 14px 5px 8px; margin-bottom: 24px; }
+.hero-tag-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--acl); }
+.hero-tag span { font-family: var(--mono); font-size: 0.62rem; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.65); }
+.hero-h1 { color: #fff; margin-bottom: 20px; }
+.hero-h1 em { font-style: italic; color: rgba(255,255,255,0.55); }
+.hero-sub { font-family: var(--sans); font-size: 1.05rem; color: rgba(255,255,255,0.55); line-height: 1.7; max-width: 540px; margin-bottom: 36px; font-weight: 300; }
+.hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+.btn-primary { display: inline-block; background: var(--accent); color: #fff; font-family: var(--sans); font-size: 0.86rem; font-weight: 600; padding: 11px 24px; border-radius: 4px; transition: background 0.15s, transform 0.1s; }
+.btn-primary:hover { background: var(--acl); text-decoration: none; transform: translateY(-1px); }
+.btn-ghost { display: inline-block; color: rgba(255,255,255,0.65); font-family: var(--sans); font-size: 0.86rem; font-weight: 500; padding: 11px 24px; border: 1px solid rgba(255,255,255,0.18); border-radius: 4px; transition: all 0.15s; }
+.btn-ghost:hover { color: #fff; border-color: rgba(255,255,255,0.4); text-decoration: none; }
+
+/* Hero conviction grid */
+.hero-convictions { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; background: rgba(255,255,255,0.06); border-radius: 8px; overflow: hidden; }
+.hc-item { background: rgba(255,255,255,0.03); padding: 22px 20px; position: relative; transition: background 0.2s; }
+.hc-item:hover { background: rgba(0,87,255,0.1); }
+.hc-problem { font-family: var(--mono); font-size: 0.6rem; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,120,80,0.75); margin-bottom: 8px; }
+.hc-title { font-family: var(--serif); font-size: 1.05rem; color: #fff; line-height: 1.2; margin-bottom: 8px; }
+.hc-principle { font-size: 0.78rem; color: rgba(255,255,255,0.38); line-height: 1.6; }
+
+/* Hero strip */
+.hero-strip { background: rgba(0,0,0,0.3); border-top: 1px solid rgba(255,255,255,0.07); }
+.hero-strip-inner { max-width: 1120px; margin: 0 auto; padding: 0 48px; display: flex; flex-wrap: wrap; }
+.hero-strip-inner a { font-family: var(--mono); font-size: 0.65rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.4); padding: 12px 18px; border-right: 1px solid rgba(255,255,255,0.06); transition: color 0.15s; }
+.hero-strip-inner a:hover { color: rgba(255,255,255,0.75); text-decoration: none; }

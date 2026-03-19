@@ -1,0 +1,47 @@
+/* TRSB — Responsive breakpoints */
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 960px) {
+  .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+  .hero-convictions { grid-template-columns: 1fr 1fr; }
+  .about-grid,.vel-grid,.contact-grid { grid-template-columns: 1fr; gap: 40px; }
+  .pillars { grid-template-columns: 1fr 1fr; }
+  .stake-grid { grid-template-columns: repeat(2,1fr); }
+  .gov-grid,.board-grid { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .std-layout { grid-template-columns: 1fr; }
+  .std-toc { display: none; }
+  .eq-grid { grid-template-columns: 1fr 1fr; gap: 20px; }
+  .dvpi-inner { grid-template-columns: 1fr; gap: 32px; }
+  .dvpi-steps { grid-template-columns: 1fr 1fr; }
+  .v-figs { grid-template-columns: 1fr 1fr; }
+  .prob-card { grid-template-columns: 1fr; }
+  .prob-label-col { border-right: none; border-bottom: 1px solid var(--bord2); }
+  .prob-body-col { border-right: none; border-bottom: 1px solid var(--bord2); }
+  .prob-answer-col { border-left: none; border-top: 3px solid var(--accent); }
+  .reg-grid { grid-template-columns: 1fr 1fr; }
+  .arch-layer { grid-template-columns: 1fr; }
+  .arch-layer-badge { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); flex-direction: row; align-items: center; gap: 12px; padding: 16px 20px; }
+  .arch-bridge { grid-template-columns: 1fr; gap: 24px; }
+  .arch-bridge-center { border-left: none; border-right: none; border-top: 1px solid rgba(255,255,255,0.08); border-bottom: 1px solid rgba(255,255,255,0.08); padding: 20px 0; }
+  .csd-grid { grid-template-columns: 1fr; gap: 40px; }
+  .protocol-grid { grid-template-columns: 1fr 1fr; }
+  .tech-bottom { grid-template-columns: 1fr; gap: 28px; }
+}
+@media (max-width: 640px) {
+  .container { padding: 0 20px; }
+  section { padding: 56px 0; }
+  .nav-inner { padding: 0 20px; }
+  .nav-links { display: none; }
+  .hero-inner { padding: 56px 20px 48px; grid-template-columns: 1fr; }
+  .hero-strip-inner { padding: 0 20px; overflow-x: auto; white-space: nowrap; }
+  .hero-stats { grid-template-columns: 1fr 1fr; }
+  .pillars,.stake-grid,.board-grid,.footer-grid,.eq-grid { grid-template-columns: 1fr; }
+  .dvpi-steps,.v-figs,.about-grid { grid-template-columns: 1fr; }
+  .j-table { display: block; overflow-x: auto; }
+  .about-sidebar { border-left: none; border-top: 1px solid var(--border); padding-left: 0; padding-top: 28px; }
+  .reg-grid { grid-template-columns: 1fr; }
+  .csd-principles { grid-template-columns: 1fr; }
+  .protocol-grid { grid-template-columns: 1fr; }
+  .tech-topo { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,26 @@
+/* TRSB — Legal pages (privacy, T&C, cookies) */
+
+#legal-page { padding-top: 60px; }
+.legal-hero { background: var(--ink); padding: 56px 0 48px; }
+.legal-hero h1 { color: #fff; font-size: clamp(1.8rem, 3.5vw, 2.8rem); }
+.legal-hero .legal-meta { font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.35); margin-top: 10px; }
+.legal-body { padding: 64px 0 80px; }
+.legal-body h2 { font-size: 1.3rem; margin: 40px 0 12px; color: var(--ink); }
+.legal-body h2:first-child { margin-top: 0; }
+.legal-body h3 { font-family: var(--sans); font-size: 1rem; font-weight: 600; margin: 24px 0 8px; color: var(--ink); }
+.legal-body p { font-size: 0.92rem; color: var(--ink3); line-height: 1.85; margin-bottom: 14px; }
+.legal-body ul, .legal-body ol { margin: 10px 0 16px 22px; font-size: 0.92rem; color: var(--ink3); line-height: 1.8; }
+.legal-body li { margin-bottom: 6px; }
+.legal-body a { color: var(--accent); }
+.legal-body strong { color: var(--ink); }
+.legal-toc { background: var(--pale2); border: 1px solid var(--border); border-radius: 6px; padding: 20px 24px; margin-bottom: 40px; }
+.legal-toc h4 { font-family: var(--mono); font-size: 0.6rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
+.legal-toc ol { margin: 0 0 0 18px; font-size: 0.86rem; color: var(--ink3); line-height: 1.9; }
+.legal-toc a { color: var(--ink3); text-decoration: none; }
+.legal-toc a:hover { color: var(--accent); }
+.legal-notice { background: var(--acpale); border-left: 3px solid var(--accent); padding: 16px 20px; border-radius: 0 4px 4px 0; margin: 20px 0 24px; }
+.legal-notice p { font-size: 0.86rem; margin: 0; color: var(--ink2); }
+.cookie-table { width: 100%; border-collapse: collapse; font-size: 0.83rem; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; margin: 16px 0 24px; }
+.cookie-table th { font-family: var(--mono); font-size: 0.58rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mid); text-align: left; padding: 10px 14px; background: var(--pale); border-bottom: 1px solid var(--border); }
+.cookie-table td { padding: 11px 14px; border-bottom: 1px solid var(--bord2); vertical-align: top; color: var(--ink3); line-height: 1.6; }
+.cookie-table tr:last-child td { border-bottom: none; }
