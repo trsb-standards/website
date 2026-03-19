@@ -1,16 +1,90 @@
 /* TRSB — Footer */
 
 /* ===== FOOTER ===== */
-footer { background: #080F1A; padding: 56px 0 28px; border-top: 2px solid rgba(0,87,255,0.3); }
-.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
-.footer-logo-img { height: 32px; display: block; margin-bottom: 16px; opacity: 0.75; transition: opacity 0.15s; }
-.footer-logo-img:hover { opacity: 1; }
-.footer-brand p { font-size: 0.8rem; color: rgba(255,255,255,0.3); line-height: 1.7; max-width: 230px; margin-bottom: 12px; }
-.footer-brand address { font-style: normal; font-size: 0.77rem; color: rgba(255,255,255,0.25); line-height: 1.8; }
-.footer-brand address a { color: rgba(255,255,255,0.38); }
-.fc h5 { font-family: var(--mono); font-size: 0.58rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.24); margin-bottom: 16px; }
-.fc a { display: block; font-size: 0.8rem; color: rgba(255,255,255,0.4); margin-bottom: 9px; transition: color 0.15s; text-decoration: none; }
-.fc a:hover { color: rgba(255,255,255,0.75); }
-.footer-bottom { border-top: 1px solid rgba(255,255,255,0.06); padding-top: 20px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; font-size: 0.73rem; color: rgba(255,255,255,0.22); }
-.footer-bottom a { color: rgba(255,255,255,0.38); text-decoration: none; transition: color 0.15s; }
-.footer-bottom a:hover { color: rgba(255,255,255,0.65); }
+footer {
+	background: #080F1A;
+	padding: 56px 0 28px;
+	border-top: 2px solid rgba(0, 87, 255, 0.3);
+}
+
+.footer-grid {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr 1fr;
+	gap: 40px;
+	margin-bottom: 40px;
+}
+
+.footer-logo-img {
+	height: 32px;
+	display: block;
+	margin-bottom: 16px;
+	opacity: 0.75;
+	transition: opacity 0.15s;
+}
+
+.footer-logo-img:hover {
+	opacity: 1;
+}
+
+.footer-brand p {
+	font-size: 0.8rem;
+	color: rgba(255, 255, 255, 0.3);
+	line-height: 1.7;
+	max-width: 230px;
+	margin-bottom: 12px;
+}
+
+.footer-brand address {
+	font-style: normal;
+	font-size: 0.77rem;
+	color: rgba(255, 255, 255, 0.25);
+	line-height: 1.8;
+}
+
+.footer-brand address a {
+	color: rgba(255, 255, 255, 0.38);
+}
+
+.fc h5 {
+	font-family: var(--mono);
+	font-size: 0.58rem;
+	font-weight: 500;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.24);
+	margin-bottom: 16px;
+}
+
+.fc a {
+	display: block;
+	font-size: 0.8rem;
+	color: rgba(255, 255, 255, 0.4);
+	margin-bottom: 9px;
+	transition: color 0.15s;
+	text-decoration: none;
+}
+
+.fc a:hover {
+	color: rgba(255, 255, 255, 0.75);
+}
+
+.footer-bottom {
+	border-top: 1px solid rgba(255, 255, 255, 0.06);
+	padding-top: 20px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 8px;
+	font-size: 0.73rem;
+	color: rgba(255, 255, 255, 0.22);
+}
+
+.footer-bottom a {
+	color: rgba(255, 255, 255, 0.38);
+	text-decoration: none;
+	transition: color 0.15s;
+}
+
+.footer-bottom a:hover {
+	color: rgba(255, 255, 255, 0.65);
+}
