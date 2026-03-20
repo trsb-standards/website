@@ -15,9 +15,9 @@ footer {
 }
 
 .footer-logo-img {
-	height: 32px;
+	height: 24px;
 	display: block;
-	margin-bottom: 16px;
+	margin-bottom: 42px;
 	opacity: 0.75;
 	transition: opacity 0.15s;
 }
