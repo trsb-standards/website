@@ -1,6 +1,3 @@
-
-// ── Nav shadow on scroll ──────────────────────────────────────────────
-
 setTimeout(function(){
 	const nav = document.getElementById('sitenav');
 	if (nav) {
@@ -9,11 +6,8 @@ setTimeout(function(){
 	  });
 	}
 
-	// ── Hamburger / mobile drawer ─────────────────────────────────────────
 	const burger = document.getElementById('nav-burger');
 	const drawer = document.getElementById('nav-drawer');
-	console.log("burg"+burger);
-	console.log("draw"+drawer);
 	if (burger && drawer) {
 	  burger.addEventListener('click', () => {
 	    const isOpen = drawer.classList.toggle('open');
