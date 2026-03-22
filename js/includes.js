@@ -1,17 +1,4 @@
-/* TRSB — includes.js
-   Loads shared nav.html and footer.html into every page.
-   Works on GitHub Pages (static hosting) — no server required.
-
-   Usage in any HTML page:
-     <div id="site-nav"></div>
-     ...page content...
-     <div id="site-footer"></div>
-     <script src="js/includes.js"></script>
-
-   For pages in subdirectories, set the base path:
-     <script>window.TRSB_BASE = '../';</script>
-     <script src="../js/includes.js"></script>
-*/
+/* Loads shared nav.html and footer.html into every page.*/
 
 (function () {
   const base = window.TRSB_BASE || '';
