@@ -1,47 +1,51 @@
-/* TRSB — main.js
-   Nav shadow · Hamburger menu · Fade-in · Standards tabs · TOC · Cookie banner */
 
 // ── Nav shadow on scroll ──────────────────────────────────────────────
-const nav = document.getElementById('sitenav');
-if (nav) {
-  window.addEventListener('scroll', () => {
-    nav.style.boxShadow = scrollY > 40 ? '0 2px 20px rgba(13,26,43,0.12)' : '';
-  });
-}
 
-// ── Hamburger / mobile drawer ─────────────────────────────────────────
-const burger = document.getElementById('nav-burger');
-const drawer = document.getElementById('nav-drawer');
+setTimeout(function(){
+	const nav = document.getElementById('sitenav');
+	if (nav) {
+	  window.addEventListener('scroll', () => {
+	    nav.style.boxShadow = scrollY > 40 ? '0 2px 20px rgba(13,26,43,0.12)' : '';
+	  });
+	}
 
-if (burger && drawer) {
-  burger.addEventListener('click', () => {
-    const isOpen = drawer.classList.toggle('open');
-    burger.classList.toggle('open', isOpen);
-    burger.setAttribute('aria-expanded', isOpen);
-  });
-  drawer.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      drawer.classList.remove('open');
-      burger.classList.remove('open');
-      burger.setAttribute('aria-expanded', 'false');
-    });
-  });
-  document.addEventListener('click', (e) => {
-    if (!nav.contains(e.target)) {
-      drawer.classList.remove('open');
-      burger.classList.remove('open');
-      burger.setAttribute('aria-expanded', 'false');
-    }
-  });
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && drawer.classList.contains('open')) {
-      drawer.classList.remove('open');
-      burger.classList.remove('open');
-      burger.setAttribute('aria-expanded', 'false');
-      burger.focus();
-    }
-  });
-}
+	// ── Hamburger / mobile drawer ─────────────────────────────────────────
+	const burger = document.getElementById('nav-burger');
+	const drawer = document.getElementById('nav-drawer');
+	console.log("burg"+burger);
+	console.log("draw"+drawer);
+	if (burger && drawer) {
+	  burger.addEventListener('click', () => {
+	    const isOpen = drawer.classList.toggle('open');
+	    burger.classList.toggle('open', isOpen);
+	    burger.setAttribute('aria-expanded', isOpen);
+	  });
+	  drawer.querySelectorAll('a').forEach(link => {
+	    link.addEventListener('click', () => {
+	      drawer.classList.remove('open');
+	      burger.classList.remove('open');
+	      burger.setAttribute('aria-expanded', 'false');
+	    });
+	  });
+	  document.addEventListener('click', (e) => {
+	    if (!nav.contains(e.target)) {
+	      drawer.classList.remove('open');
+	      burger.classList.remove('open');
+	      burger.setAttribute('aria-expanded', 'false');
+	    }
+	  });
+	  document.addEventListener('keydown', (e) => {
+	    if (e.key === 'Escape' && drawer.classList.contains('open')) {
+	      drawer.classList.remove('open');
+	      burger.classList.remove('open');
+	      burger.setAttribute('aria-expanded', 'false');
+	      burger.focus();
+	    }
+	  });
+	}
+}, 500);
+
+
 
 // ── Fade-in on scroll ─────────────────────────────────────────────────
 const obs = new IntersectionObserver(
