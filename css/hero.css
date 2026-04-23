@@ -4,11 +4,11 @@
 #hero {
   padding-top: 60px;
   background: var(--ink);
-  overflow: hidden;
   position: relative;
 }
 .hero-grid-bg {
   position: absolute; inset: 0;
+  overflow: hidden;
   background-image:
     linear-gradient(rgba(0,87,255,0.06) 1px, transparent 1px),
     linear-gradient(90deg, rgba(0,87,255,0.06) 1px, transparent 1px);
@@ -38,7 +38,7 @@
 .hc-principle { font-size: 0.78rem; color: rgba(255,255,255,0.38); line-height: 1.6; }
 
 /* Hero strip */
-.hero-strip { background: rgba(0,0,0,0.3); border-top: 1px solid rgba(255,255,255,0.07); }
+.hero-strip { background: rgba(0,0,0,0.3); border-top: 1px solid rgba(255,255,255,0.07); position: relative; z-index: 2; }
 .hero-strip-inner { max-width: 1120px; margin: 0 auto; padding: 0 48px; display: flex; flex-wrap: wrap; }
 .hero-strip-inner a { font-family: var(--mono); font-size: 0.65rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.4); padding: 12px 18px; border-right: 1px solid rgba(255,255,255,0.06); transition: color 0.15s; }
 .hero-strip-inner a:hover { color: rgba(255,255,255,0.75); text-decoration: none; }

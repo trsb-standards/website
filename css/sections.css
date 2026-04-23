@@ -133,7 +133,7 @@
 .cr { background: #E0F2F1; color: #00695C; }
 
 /* ===== PRINCIPIOS REGISTRALES ===== */
-#registrales { background: var(--ink); padding: 88px 0; }
+#principals { background: var(--ink); padding: 88px 0; }
 .reg-intro { max-width: 700px; margin-bottom: 56px; }
 .reg-intro h2 { color: #fff; }
 .reg-intro p { color: rgba(255,255,255,0.45); }
