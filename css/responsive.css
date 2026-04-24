@@ -20,6 +20,8 @@
   .prob-body-col { border-right: none; border-bottom: 1px solid var(--bord2); }
   .prob-answer-col { border-left: none; border-top: 3px solid var(--accent); }
   .reg-grid { grid-template-columns: 1fr 1fr; }
+  .impact-classes { grid-template-columns: 1fr 1fr; }
+  .impact-countries { grid-template-columns: 1fr 1fr; }
   .arch-layer { grid-template-columns: 1fr; }
   .arch-layer-badge { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); flex-direction: row; align-items: center; gap: 12px; padding: 16px 20px; }
   .arch-bridge { grid-template-columns: 1fr; gap: 24px; }
@@ -41,6 +43,8 @@
   .j-table { display: block; overflow-x: auto; }
   .about-sidebar { border-left: none; border-top: 1px solid var(--border); padding-left: 0; padding-top: 28px; }
   .reg-grid { grid-template-columns: 1fr; }
+  .impact-classes { grid-template-columns: 1fr; }
+  .impact-countries { grid-template-columns: 1fr; }
   .csd-principles { grid-template-columns: 1fr; }
   .protocol-grid { grid-template-columns: 1fr; }
   .tech-topo { grid-template-columns: 1fr; }

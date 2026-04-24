@@ -147,6 +147,56 @@
 .reg-card p { font-size: 0.82rem; color: rgba(255,255,255,0.38); line-height: 1.75; margin-bottom: 0; }
 .reg-latin { font-family: var(--serif); font-style: italic; font-size: 0.88rem; color: rgba(255,255,255,0.2); margin-top: 10px; display: block; }
 
+/* ===== IMPACT / JURISDICTION CLASSIFICATION ===== */
+#impact { background: var(--pale2); padding: 88px 0; }
+.impact-intro { max-width: 720px; margin-bottom: 48px; }
+.impact-intro p { margin-bottom: 12px; }
+.impact-method-label { font-family: var(--mono); font-size: 0.6rem; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--mid); margin-bottom: 20px; }
+
+/* Class methodology cards */
+.impact-classes { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; background: var(--border); border-radius: 6px; overflow: hidden; margin-bottom: 16px; }
+.impact-class { background: var(--white); padding: 24px 20px; position: relative; }
+.impact-class::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; }
+.ic1::before { background: #00875A; }
+.ic2::before { background: #0057FF; }
+.ic3::before { background: #C08020; }
+.ic4::before { background: var(--mid); }
+.ic-badge { font-family: var(--mono); font-size: 0.55rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 10px; }
+.ic1 .ic-badge { color: #00875A; }
+.ic2 .ic-badge { color: var(--accent); }
+.ic3 .ic-badge { color: var(--gold); }
+.ic4 .ic-badge { color: var(--mid); }
+.impact-class h3 { font-family: var(--sans); font-size: 0.9rem; font-weight: 600; color: var(--ink); margin-bottom: 10px; line-height: 1.3; }
+.impact-class > p { font-size: 0.8rem; color: var(--ink3); line-height: 1.7; margin-bottom: 14px; }
+.ic-tags { display: flex; flex-wrap: wrap; gap: 4px; }
+.ic-tags span { font-family: var(--mono); font-size: 0.55rem; letter-spacing: 0.1em; text-transform: uppercase; background: var(--pale); color: var(--mid); padding: 3px 8px; border-radius: 3px; }
+
+/* Country grid */
+.impact-countries { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.ic-country { background: var(--white); border: 1px solid var(--bord2); border-radius: 6px; padding: 20px; position: relative; border-top: 3px solid var(--border); }
+.ic-country.class-1 { border-top-color: #00875A; }
+.ic-country.class-2 { border-top-color: var(--accent); }
+.ic-country.class-3 { border-top-color: var(--gold); }
+.ic-country.class-4 { border-top-color: var(--mid); }
+.ic-flag { font-size: 1.6rem; margin-bottom: 8px; line-height: 1; }
+.ic-country-name { font-family: var(--sans); font-size: 0.95rem; font-weight: 600; color: var(--ink); margin-bottom: 2px; }
+.ic-country-system { font-family: var(--mono); font-size: 0.58rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid); margin-bottom: 10px; }
+.ic-class-badge { display: inline-block; font-family: var(--mono); font-size: 0.55rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; padding: 3px 8px; border-radius: 3px; margin-bottom: 12px; }
+.c1 { background: var(--greenpale); color: var(--green); }
+.c2 { background: var(--acpale); color: var(--accent); }
+.c3 { background: #FFF8E1; color: var(--gold); }
+.c4 { background: var(--pale); color: var(--mid); }
+.ic-country-note { font-size: 0.78rem; color: var(--ink3); line-height: 1.7; }
+
+/* Contribute card */
+.ic-contribute { background: var(--ink); border: none; border-top: 3px solid var(--accent); display: flex; flex-direction: column; align-items: flex-start; }
+.ic-contribute .ic-flag { font-size: 1.6rem; }
+.ic-contribute .ic-country-name { color: #fff; }
+.ic-contribute .ic-country-system { color: rgba(255,255,255,0.35); }
+.ic-contribute .ic-country-note { color: rgba(255,255,255,0.45); margin-bottom: 16px; }
+.ic-contribute-btn { display: inline-block; background: var(--accent); color: #fff; font-family: var(--mono); font-size: 0.62rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; padding: 10px 18px; border-radius: 4px; margin-top: auto; transition: background 0.15s; }
+.ic-contribute-btn:hover { background: var(--acl); text-decoration: none; }
+
 /* ===== THREE-LAYER ARCHITECTURE ===== */
 #architecture { background: var(--white); padding: 88px 0; }
 .arch-intro { max-width: 700px; margin-bottom: 56px; }
